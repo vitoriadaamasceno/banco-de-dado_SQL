@@ -52,5 +52,6 @@ C.nome AS 'Nome',
 E.logradouro AS 'Logradouro'
 FROM Clientes C
 Inner Join  Clientes_has_Endereco H on C.id = H.clienteId
-Inner join Endereco E on H.enderecoId = E.id;
+Inner join Endereco E on H.enderecoId = E.id
+ORDER BY C.nome;
 
